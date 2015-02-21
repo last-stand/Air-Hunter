@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title>Air Hunter</title>
+		<link rel="shortcut icon" type="image/png" href="images/f16.gif">
+		<script type="text/javascript" src="./javascripts/airHunterLibrary.js"></script>
+		<script type="text/javascript" src="./javascripts/jquery-2.1.1.js"></script>
+		<link rel="stylesheet" type="text/css" href="./stylesheets/style.css">
+	</head>
+	<body onkeydown="moveSelection(event);">
+		<center>
+			<h1>Air Hunter</h1>
+			<div class="score">Score: <span id="score">0</span></div>
+			<div id="timer">11:30:00</div>
+			<div id="war_field">
+				<div id="mDiv"></div>
+					<img id='plane' src='images/f16.gif'>
+			</div>
+		</center>
+		<audio id="soundEfx" style="display: none;" ></audio>
+		<script type="text/javascript">
+			$(document).ready(init());
+		</script>
+	</body>
+</html>
